@@ -1,0 +1,25 @@
+<!DOCTYPE html>  
+<html lang="vi">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Chúc Mừng Sinh Nhật!</title>  
+    <link rel="stylesheet" href="styles.css">  
+</head>  
+<body>  
+    <div class="container">  
+        <h1>Chúc Mừng Sinh Nhật!</h1>  
+        <p>Chúc bạn một ngày sinh nhật tuyệt vời và mong những điều ước của bạn sẽ trở thành hiện thực!</p>  
+        <img src="https://cdn.pixabay.com/photo/2017/11/01/05/54/birthday-2890141_1280.png" alt="Happy Birthday" class="birthday-image">  
+        <button onclick="showMessage()">Gửi Lời Chúc</button>  
+        <p id="message" class="hidden"></p>  
+    </div>  
+
+    <script>  
+        function showMessage() {  
+            document.getElementById('message').innerText = "Chúc bạn luôn vui vẻ và hạnh phúc! 🎉";  
+            document.getElementById('message').classList.remove('hidden');  
+        }  
+    </script>  
+</body>  
+</html>
